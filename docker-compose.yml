@@ -1,0 +1,8 @@
+services:
+  ms-chatgpt-mcp:
+    build: .
+    container_name: ms-chatgpt-mcp
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "8000:8000"
